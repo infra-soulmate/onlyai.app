@@ -65,7 +65,7 @@
   <footer class="sticky bottom-0 mt-auto">
     <div class="py-10 bg-linear-to-t from-slate-900/60 to-transparent">&nbsp;</div>
     <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 justify-center flex pb-10 bg-linear-to-t from-slate-900 to-slate-900/60">
-      <a id="cta" class="px-10 py-3 text-red-50 no-underline bg-rose-500 rounded font-bold">Explore Now For Free</a>
+      <a id="cta" href="https://t.me/ivy_girlfriend_bot?startapp" class="px-10 py-3 text-red-50 no-underline bg-rose-500 rounded font-bold">Explore Now For Free</a>
     </div>
   </footer>
   <!-- ========== END FOOTER ========== -->
@@ -83,7 +83,9 @@
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const start = urlParams.get("start");
-    document.getElementById("cta").href = ("https://t.me/ivy_girlfriend_bot?startapp=" + start);
+    if (start) {
+      document.getElementById("cta").href = ("https://t.me/ivy_girlfriend_bot?startapp=" + start);
+    }
   </script>
 </body>
 </html>
