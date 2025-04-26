@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="./src/output.css" rel="stylesheet">
+  <link href="../src/output.css" rel="stylesheet">
   <title></title>
 </head>
-<body class="bg-slate-900">
+<body class="bg-gray-900">
   <!-- ========== HEADER ========== -->
   <header class="flex flex-wrap justify-center lg:flex-nowrap z-50 w-full py-7">
     <nav class="relative max-w-7xl w-full flex flex-wrap basis-full justify-center px-4 md:px-6 lg:px-8 mx-auto">
@@ -26,7 +26,7 @@
     <div class="max-w-[85rem] mx-auto px-4">
       <!-- Title -->
       <div class="mt-5 max-w-2xl text-center mx-auto">
-        <h1 class="block font-bold text-slate-100 text-4xl md:text-5xl lg:text-6xl">
+        <h1 class="block font-bold text-gray-100 text-4xl md:text-5xl lg:text-6xl">
           Live Your
           <span class="bg-clip-text bg-linear-to-tl from-rose-500 to-fuchsia-400 text-transparent">Fantasy</span>
         </h1>
@@ -34,19 +34,19 @@
       <!-- End Title -->
 
       <div class="mt-5 max-w-3xl text-center mx-auto">
-        <p class="text-lg text-slate-400">Hot Idols are waiting to get intimate with you. Anytime!</p>
+        <p class="text-lg text-gray-400">Hot Idols are waiting to get intimate with you. Anytime!</p>
       </div>
       <div class="mt-5 max-w-3xl text-center mx-auto">
-        <p class="text-slate-400">😍 Visualize Your Fantasies</p>
-        <p class="text-slate-400">📸 Daily Hot Photos & Videos</p>
-        <p class="text-slate-400">❤️‍🔥 Curated Scenarios</p>
-        <p class="text-slate-400">💬 Roleplay Chat</p>
+        <p class="text-gray-400">😍 Visualize Your Fantasies</p>
+        <p class="text-gray-400">📸 Daily Hot Photos & Videos</p>
+        <p class="text-gray-400">❤️‍🔥 Curated Scenarios</p>
+        <p class="text-gray-400">💬 Roleplay Chat</p>
       </div>
     </div>
   </div>
   <!-- End Hero -->
 
-  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+  <div class="max-w-[85rem] px-4 pt-10 sm:px-6 lg:px-8 lg:pt-14 mx-auto">
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
       <div class="space-y-2">
         <img class="w-full h-auto object-cover" src="https://ivy-cdn.b-cdn.net/bots/amanda-8ed424920b95.jpeg" alt="Gallery Masonry Image">
@@ -57,22 +57,22 @@
         <img class="w-full h-auto object-cover" src="https://ivy-cdn.b-cdn.net/bots/990187c1-f64c-4352-9fc0-e89ae43ffdcc.jpg" alt="Gallery Masonry Image">
       </div>
       <div class="space-y-2">
-        <img class="w-full h-auto object-cover" src="https://ivy-cdn.b-cdn.net/posts/3770bba5-d6c9-44f2-95a0-2f1e37adc7b3.jpg" alt="Gallery Masonry Image">
+        <img class="w-full aspect-3/4 object-cover" src="https://ivy-cdn.b-cdn.net/posts/3770bba5-d6c9-44f2-95a0-2f1e37adc7b3.jpg" alt="Gallery Masonry Image">
         <img class="w-full h-auto object-cover" src="https://ivy-cdn.b-cdn.net/posts/3da3fd6f-954e-4b53-9fe9-fc324896d016.jpg" alt="Gallery Masonry Image">
       </div>
       <div class="space-y-2">
-        <img class="w-full h-auto object-cover" src="https://ivy-cdn.b-cdn.net/posts/1d7b3ba3-fdb6-4295-93ed-95148009d43b.jpg" alt="Gallery Masonry Image">
+        <img class="w-full aspect-9/16 object-cover" src="https://ivy-cdn.b-cdn.net/posts/1d7b3ba3-fdb6-4295-93ed-95148009d43b.jpg" alt="Gallery Masonry Image">
         <img class="w-full h-auto object-cover" src="https://ivy-cdn.b-cdn.net/posts/85228eef-4de3-4c0c-9435-946d7a368bdc.jpg" alt="Gallery Masonry Image">
       </div>
     </div>
   </div>
 
   <!-- ========== FOOTER ========== -->
-  <footer class="sticky bottom-0 mt-auto">
-    <div class="py-10 bg-linear-to-t from-slate-900/60 to-transparent text-slate-100 items-center flex flex-col">
+  <footer class="fixed bottom-0 mt-auto w-full">
+    <!-- <div class="py-10 bg-linear-to-t from-gray-950/80 to-transparent text-gray-100 items-center flex flex-col"> -->
     </div>
-    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 justify-center flex pb-10 bg-linear-to-t from-slate-900 to-slate-900/60">
-      <a id="cta" href="https://t.me/ivy_girlfriend_bot?startapp" class="px-10 py-3 text-red-50 no-underline bg-rose-500 rounded font-bold">Explore Now For Free</a>
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 justify-center flex pb-10 pt-20 bg-linear-to-t from-gray-950 to-transparent">
+      <a id="cta" href="https://ivysoulmate.com" class="px-10 py-3 text-rose-50 no-underline bg-rose-500 rounded font-bold">Explore Now For Free</a>
     </div>
   </footer>
   <!-- ========== END FOOTER ========== -->
@@ -85,14 +85,6 @@
     gtag('js', new Date());
 
     gtag('config', 'G-T0QE3560G5');
-  </script>
-  <script type="text/javascript">
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-    const start = urlParams.get("start");
-    if (start) {
-      document.getElementById("cta").href = ("https://t.me/ivy_girlfriend_bot?startapp=" + start);
-    }
   </script>
 </body>
 </html>
